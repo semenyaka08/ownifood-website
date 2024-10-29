@@ -62,9 +62,112 @@ Medium: 11px
     box-sizing: border-box;
 }
 
+html{
+    /*fontsize = 10px;*/
+    font-size: 62.5%;
+}
+
 body{
-    font-family: sans-serif;
+    font-family: "Rubik", sans-serif;
     line-height: 1;
     font-weight: 400;
     color: #555;
+}
+
+.section-hero{
+    background-color: #fae5d3;
+    padding: 6.2rem 0;
+    height: 110vh;
+}
+
+.hero-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    column-gap: 10rem;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.hero-title{
+    font-size: 5.2rem;
+    color: #333;
+    font-weight: 700;
+    line-height: 0.9;
+    letter-spacing: -0.5px;
+    margin-bottom: 3rem;
+}
+
+.hero-description{
+    font-size: 2rem;
+    color: #333333;
+    font-weight: 400;
+    margin-bottom: 4.8rem;
+    letter-spacing: 1.5px;
+}
+
+.btn:link, .btn:visited{
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 15px;
+    padding: 1.2rem 2rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    transition: background-color 300ms;
+}
+
+.btn--full:link, .btn--outline:visited{
+    background-color: #e67e22;
+    color: #fff;
+
+}
+
+.btn--full:hover, .btn--outline:active{
+    background-color: #cf711f;
+}
+
+.btn--outline:link, .btn--outline:visited{
+    background-color: #fff;
+    color: #767676;
+}
+
+.btn--outline:hover, .btn--outline:active{
+    background-color: #f1f1f1;
+    color: #595959;
+}
+
+.hero-img img{
+    width: 100%;
+}
+
+.margin-right-sm{
+    margin-right: 1.6rem;
+}
+
+.customer-images{
+    display: flex;
+}
+
+.customer-images img{
+    height: 5.2rem;
+    width: 5.2rem;
+    border-radius: 50%;
+    border: 3px solid #fae5d3;
+    margin-right: -1.2rem;
+}
+
+.delivered-meals{
+    margin-top: 6.4rem;
+    display: flex;
+    align-items: center;
+    gap: 3.6rem;
+}
+
+.meals-delivered-text{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.primary-highlight{
+    color: #cf711f;
 }
