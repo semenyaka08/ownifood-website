@@ -89,6 +89,26 @@ body{
     margin-bottom: 3rem;
 }
 
+.basic-container{
+    max-width: 110rem;
+    padding: 6rem 3rem 0;
+    margin: 4rem auto 0;
+}
+
+.grid{
+    display: grid;
+    margin-top: 4rem;
+}
+
+.grid--2-cols{
+    grid-template-columns: 1fr 1fr;
+    gap: 10rem;
+}
+
+.grid-align-v{
+    align-items: center;
+}
+
 .btn:link, .btn:visited{
     display: inline-block;
     text-decoration: none;
@@ -97,6 +117,13 @@ body{
     font-size: 1.8rem;
     font-weight: 600;
     transition: background-color 300ms;
+}
+
+.heading-secondary{
+    font-size: 3.6rem;
+    font-weight: 700;
+    color: #333;
+    margin-top: 2rem;
 }
 
 .btn--full:link, .btn--outline:visited{
@@ -233,4 +260,70 @@ body{
 
 .primary-highlight{
     color: #cf711f;
+}
+
+/****************************************/
+/*HOW IT WORKS SECTION*/
+/****************************************/
+.how{
+    background-color: #fffdfb;
+}
+
+.step-number{
+    font-size: 7.4rem;
+    font-weight: 700;
+    color: #cac4be;
+}
+
+.heading-tertiary{
+    font-size: 2.6rem;
+    color: #333;
+    margin-top: 1.6rem;
+    margin-bottom: 3.2rem;
+}
+
+.step-description{
+    font-size: 1.6rem;
+    color: #555;
+    letter-spacing: 0.2px;
+    line-height: 1.8;
+}
+
+.step-img{
+    width: 35%;
+    z-index: 1;
+}
+
+.how .basic-container .primary-highlight{
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.step-img-box{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.step-img-box::before, .step-img-box::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.step-img-box::before{
+    width: 62%;
+    padding-bottom: 62%;
+    background-color: #fae5d3;
+}
+
+.step-img-box::after{
+    width: 50%;
+    padding-bottom: 50%;
+    background-color: #f5cba7;
 }
