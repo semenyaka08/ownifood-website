@@ -186,6 +186,10 @@ body{
     margin-bottom: 9.6rem;
 }
 
+.thin-text{
+    font-weight: 400 !important;
+}
+
 /****************************************/
 /*HEADER*/
 /****************************************/
@@ -299,6 +303,10 @@ body{
 
 .primary-highlight{
     color: #cf711f;
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase
 }
 
 /****************************************/
@@ -334,12 +342,6 @@ body{
 .step-img{
     width: 35%;
     z-index: 1;
-}
-
-.how .basic-container .primary-highlight{
-    font-weight: 600;
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
 }
 
 .step-img-box{
@@ -509,3 +511,70 @@ body{
     border-bottom: 1px solid transparent;
 }
 
+/****************************************/
+/*TESTIMONIALS SECTION*/
+/****************************************/
+.section-testimonials{
+    background-color: #fae5d3;
+    display: grid;
+    grid-template-columns: 55fr 45fr;
+    align-items: center;
+}
+
+.testimonials-content{
+    padding: 9.6rem;
+}
+
+.testimonials{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4.8rem;
+}
+
+.testimonials-header{
+    margin-bottom: 8.8rem;
+}
+
+.heading-testimonials{
+    font-size: 4.8rem;
+    color: #333333;
+    margin-top: 3.2rem;
+}
+
+.testimonial-img{
+    width: 6.4rem;
+    border-radius: 50%;
+    margin-bottom: 1.8rem;
+}
+
+.testimonial blockquote{
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 1.6rem;
+}
+
+.testimonial p{
+    font-size: 1.6rem;
+    color: #777;
+}
+
+.testimonials-gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.6rem;
+    padding: 1.6rem;
+}
+
+.testimonial-meal-image{
+    overflow: hidden;
+}
+
+.testimonial-meal-image img{
+    width: 100%;
+    display: block;
+    transition: all 0.4s;
+}
+
+.testimonial-meal-image img:hover{
+    transform: scale(1.1);
+}
