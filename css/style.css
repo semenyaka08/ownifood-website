@@ -120,6 +120,10 @@ body{
     align-items: center;
 }
 
+.grid-align-g{
+    justify-items: center;
+}
+
 .btn:link, .btn:visited{
     display: inline-block;
     text-decoration: none;
@@ -577,4 +581,110 @@ body{
 
 .testimonial-meal-image img:hover{
     transform: scale(1.1);
+}
+
+/****************************************/
+/*PRICING SECTION*/
+/****************************************/
+.section-pricing{
+    padding: 9.6rem 0;
+}
+
+.section-pricing .grid-align-g{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6.4rem;
+}
+
+.pricing-header{
+    display: flex;
+    flex-direction: column;
+}
+
+.heading-pricing{
+    font-size: 4.4rem;
+    color: #333333;
+}
+
+.pricing-card{
+    padding: 4.8rem;
+    width: 75%;
+    border-radius: 10px;
+}
+
+.starter{
+    border: 2px solid #fae5d3;
+    justify-self: end;
+}
+
+.complete{
+    background-color: #fae5d3;
+    justify-self: start;
+}
+
+.pricing-card-header span{
+    margin-bottom: 1.5rem;
+}
+
+.pricing-card-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+.price-value{
+    font-size: 5.2rem;
+    font-weight: 600;
+    gap: 1rem;
+}
+
+.price-value span{
+    font-size: 2.4rem !important;
+    font-weight: 500 !important;
+}
+
+.plan-advantage{
+    font-size: 1.4rem;
+}
+
+.price-button{
+    display: flex;
+    justify-content: center;
+}
+
+.subscription-cancellation{
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.pricing-features{
+    display: flex;
+    gap: 5.2rem;
+}
+
+.feature{
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.feature-header{
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #333333;
+}
+
+.feature-description{
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.feature-icon {
+    color: #e67e22;
+    height: 3.2rem;
+    width: 3.2rem;
+    background-color: #fdf2e9;
+    margin-bottom: 1.6rem;
+    padding: 1.6rem;
+    border-radius: 50%;
 }
