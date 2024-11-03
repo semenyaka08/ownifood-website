@@ -4,26 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
+
+    <link rel="icon" href="img/favicons/favicon-64.png">
+
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
           rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/queries.css">
+
+    <script defer src="js/script.js"></script>
+
     <title>Omnifood</title>
 </head>
 <body>
-    <header class="header mobile-nav-open">
-        <a href="#">
+    <header class="header" id="header">
+        <a href="#header">
             <img class="logo-img" src="img/omnifood-logo.png" alt="logo">
         </a>
         <nav class="main-nav">
             <ul class="nav-list">
-                <li><a href="#">How it works</a></li>
-                <li><a href="#">Meals</a></li>
-                <li><a href="#">Testimonials</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#" class="nav-cta">Try it for free!</a></li>
+                <li><a href="#how">How it works</a></li>
+                <li><a href="#meals">Meals</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#cta" class="nav-cta">Try it for free!</a></li>
             </ul>
         </nav>
         <button class="btn-mobile-nab">
@@ -33,7 +41,7 @@
     </header>
 
     <main>
-        <section class="section-hero">
+        <section class="section-hero" id="hero">
             <div class="hero-container">
                 <div class="hero-text">
                     <h1 class="hero-title">A healthy meal delivered to your door, every single day</h1>
@@ -74,7 +82,7 @@
             </div>
         </section>
 
-        <section class="how">
+        <section class="section-how" id="how">
             <div class="basic-container">
                 <span class="primary-highlight">HOW IT WORKS</span>
                 <h2 class="heading-secondary">Your daily dose of health in 3 simple steps</h2>
@@ -115,7 +123,7 @@
             </div>
         </section>
 
-        <section class="section-meals">
+        <section class="section-meals" id="meals">
             <div class="basic-container flex-align-g margin-bottom-lg">
                 <span class="primary-highlight">MEALS</span>
                 <h2 class="heading-secondary">Omnifood AI chooses from 5,000+ recipes
@@ -200,7 +208,7 @@
             </div>
         </section>
 
-        <section class="section-testimonials">
+        <section class="section-testimonials" id="testimonials">
             <div class="testimonials-content">
                 <div class="testimonials-header">
                     <span class="primary-highlight">testimonials</span>
@@ -277,7 +285,7 @@
             </div>
         </section>
 
-        <section class="section-pricing">
+        <section class="section-pricing" id="pricing">
             <div class="pricing-header basic-container margin-bottom-lg">
                 <span class="primary-highlight">pricing</span>
                 <h2 class="heading-pricing">Eating well without breaking the bank</h2>
@@ -356,7 +364,7 @@
             </div>
         </section>
 
-        <section class="section-cta">
+        <section class="section-cta" id="cta">
             <div class="basic-container">
                 <div class="cta">
                     <div class="cta-text-box">
@@ -432,7 +440,7 @@
                     </li>
                 </ul>
                 <p class="copyright">
-                    Copyright &copy; 2027 by Omnifood, Inc. All rights reserved.
+                    Copyright &copy; <span class="current-year">2027</span> by Omnifood, Inc. All rights reserved.
                 </p>
             </div>
 
@@ -493,5 +501,6 @@
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 </body>
 </html>

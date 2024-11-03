@@ -58,11 +58,11 @@
         grid-template-columns: repeat(6, 1fr);
     }
 
-    .how, .section-meals, .section-pricing, .section-cta, .footer{
+    .section-how, .section-meals, .section-pricing, .section-cta, .footer{
         padding: 10rem 0;
     }
 
-    .how{
+    .section-how{
         padding-top: 6rem;
     }
 
